@@ -1,0 +1,67 @@
+{
+  "model_name": "Random Forest",
+  "trained_at_utc": "2026-10-24T18:53:06+00:00",
+  "data_file": "sample_houses_SYNTHETIC.csv",
+  "is_synthetic": true,
+  "data_label": "SYNTHETIC demo data (invented, not real listings)",
+  "currency": "PKR",
+  "area_unit": "marla",
+  "n_rows_clean": 1000,
+  "cities": [
+    "Islamabad",
+    "Lahore",
+    "Mardan",
+    "Peshawar"
+  ],
+  "city_counts": {
+    "Islamabad": 256,
+    "Peshawar": 253,
+    "Lahore": 253,
+    "Mardan": 238
+  },
+  "property_types": [
+    "Flat",
+    "House"
+  ],
+  "numeric_ranges": {
+    "area_marla": {
+      "min": 3.0,
+      "max": 20.0
+    },
+    "bedrooms": {
+      "min": 1.0,
+      "max": 8.0
+    },
+    "bathrooms": {
+      "min": 1.0,
+      "max": 8.0
+    },
+    "floors": {
+      "min": 1.0,
+      "max": 3.0
+    },
+    "age_years": {
+      "min": 0.0,
+      "max": 39.0
+    }
+  },
+  "min_rows_per_city": 50,
+  "test_metrics": {
+    "MAE": 2738544.02215132,
+    "RMSE": 4615107.637322149,
+    "R2": 0.9733464905965149
+  },
+  "cleaning_report": {
+    "rows_before": 1010,
+    "non_numeric_entries_set_to_nan": 0,
+    "duplicates_removed": 10,
+    "missing_or_nonpositive_price_removed": 0,
+    "invalid_values_removed": 0,
+    "rows_after": 1000,
+    "missing_values_remaining": {
+      "age_years": 30
+    },
+    "price_outliers_flagged_not_removed": 8
+  },
+  "random_seed": 42
+}

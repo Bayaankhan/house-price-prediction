@@ -1,0 +1,30 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Secrets
+.env
+*.key
+
+# Data: raw/processed files may be large or licensed. Do not commit them
+# unless the license allows redistribution.
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Trained models can be large; regenerate with `python -m src.train`
+models/*.joblib
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
